@@ -15,6 +15,15 @@ export default defineConfig({
     }
   },
   build: {
+    target: "es2015",
+    outDir: "lib",
+    appType: "custom",
+    sourcemap: false,
+    lib: {
+      name: "jsuse",
+      entry: "./src/index.ts",
+      formats: ["es", "umd", "iife", "cjs", "amd"] // 编译后文件格式
+    },
     minify: "terser",
     terserOptions: {
       compress: {
