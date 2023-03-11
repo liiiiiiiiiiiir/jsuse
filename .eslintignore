@@ -3,6 +3,7 @@ public
 .gitignore
 yarn.lock
 package-lock.json
+coverage/*
 
 # Logs
 logs
